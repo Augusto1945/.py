@@ -1,0 +1,15 @@
+l1= int(input("valor do lado: ")) 
+l2= int(input("valor do lado:")) 
+l3 = int(input("valor do lado:")) 
+if 11+12>13: 
+   print("é um triângulo")  
+else: 
+   print("não é um triângulo") 
+if 11 == 12 == 13: 
+   print("é um triângulo equilátero") 
+elif l1 == l2 or l2 == l3 or l3 == l1: 
+   print("é um triângulo isosceles")  
+elif l1 != l2 != l3: 
+   print("é um triângulo escaleno")  
+else: 
+   print("erro")

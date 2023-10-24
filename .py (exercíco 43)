@@ -1,0 +1,14 @@
+c = input("combustivel:") 
+l = float(input("quantos litros?")) 
+G = gasolina = c 
+A = álcool = c 
+if c == A and l == 20: 
+   print("R$", (1.90*l)-(3*l)/100, "á pagar") 
+elif c == A and l>28: 
+   print("RS", (1.90*l)-(5*l)/100," pagar") 
+elif c == G and l == 28: 
+   print("RS" (2.50*l)-(4*l)/100,"à pagar") 
+elif c == G and l>20: 
+   print("R$", (2.50*l)-(6*l)/100," pagar")
+else: 
+   print("erro")

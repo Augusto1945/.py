@@ -1,0 +1,2 @@
+c = float(input("digite a temperatura:"))
+print((c*9/5)+32, "farenheit")

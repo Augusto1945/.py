@@ -1,0 +1,2 @@
+cm = float(input("coloque a medida:"))
+print(cm*100, "centimetros")

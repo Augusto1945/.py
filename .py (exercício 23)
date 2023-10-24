@@ -1,0 +1,7 @@
+notal = int(input("digite a sua nota:")) 
+nota2 = int(input("digite sua segunda nota:")) 
+média = (notal+nota2)/2 
+if média>=7: 
+    print("aprovado") 
+else: 
+    print("reprovado")

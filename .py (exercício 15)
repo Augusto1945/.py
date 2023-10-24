@@ -1,0 +1,12 @@
+h = int(input("horas trabalhadas:"))  
+m = int(input("quantas vezes ao mês?")) 
+s = (h*m) 
+print("R$",s," seu salário bruto ")
+renda = (s*11)/100 
+print("o imposto de renda foi de R$",renda) 
+inss = (s*8)/100 
+print("o inss foi de R$", inss) 
+sindicato = (s*5)/100 
+print("o sindicato retirou R$", sindicato) 
+sl= (s-renda-inss-sindicato) 
+print("seu salário líquido é de R$", sl)

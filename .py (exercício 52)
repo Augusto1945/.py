@@ -1,0 +1,7 @@
+a = int(input("digite un valor:")) 
+b = int(input("digite un valor:")) 
+c = int(input("digite um valor:")) 
+d = int(input("digite um valor:")) 
+e = int(input("digite un valor:")) 
+m = max((a,b,c,d,e)) 
+print("o valor máximo é",m)

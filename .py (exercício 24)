@@ -1,0 +1,4 @@
+a = int(input("digite seu número:"))
+b = int(input("digite seu número:"))
+c = int(input("digite seu número:"))
+print(max(a,b,c))

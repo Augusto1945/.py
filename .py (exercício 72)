@@ -1,0 +1,8 @@
+# Faça um programa que calcule o valor total investido por um colecionador em sua coleção de CDs e o valor médio gasto em cada um deles. O usuário deverá informara quantidade de CDs e o valor para em cada um.
+cd1 = int(input("valor:"))
+cd2 = int(input("valor:"))
+cd3 = int(input("valor:"))
+cd4 = int(input("valor:"))
+cd5 = int(input("valor:"))
+print ('o investimento é de:',cd1+cd2+cd3+cd4+cd5)
+print ('a média de cada cd foi de:',(cd1+cd2+cd3+cd4+cd5)/5)

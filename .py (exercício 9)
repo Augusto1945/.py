@@ -1,2 +1,5 @@
 f = float(input("digite temperatura:")) 
 print((5* (f-32) / 9), "celsius")
+for a in range ():
+ print ("o menor valor é:",min()) and print("o maior valor é:",max()) and print(max+min) 
+ break

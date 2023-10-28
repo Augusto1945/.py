@@ -1,0 +1,9 @@
+a = int(input("n:"))
+b = int(input("n:"))
+c = int(input("n:"))
+d = int(input("n:"))
+e = int(input("n:"))
+numeros = [a,b,c,d,e]
+print(max(numeros))
+print(min(numeros))
+print (a+b+c+d+e)

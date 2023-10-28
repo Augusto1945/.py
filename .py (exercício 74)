@@ -1,0 +1,3 @@
+pão = float(input("valor: "))
+for quantidade in range(1, 51):
+  print(quantidade,pão*quantidade)

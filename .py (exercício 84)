@@ -1,0 +1,21 @@
+tabela = {
+    100: 1.20,
+    101: 1.30,
+    102: 1.50,
+    103: 1.20,
+    104: 1.30,
+    105: 1.00
+}
+
+total_pedido = 0
+
+while True:
+    codigo = int(input("Digite o código do item (ou 0 para encerrar o pedido): "))
+    if codigo == 0:
+        break  
+    quantidade = int(input(f"Digite a quantidade desejada do item {codigo}: "))
+    preco_item = tabela[codigo]
+    total_item = preco_item * quantidade
+    total_pedido += total_item
+print(f"preço por item:R$'{total_item:.2f}")
+print(f"Total a ser pago: R${total_pedido:.2f}")

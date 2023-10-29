@@ -1,0 +1,13 @@
+salario_min = [200, 300, 400, 500, 600, 700, 800, 900, 1000,0]
+salario_max = [299, 399, 499, 599, 699, 799, 899, 999, float('inf')]
+def calcular_posicao(salario):
+    return next((i for i, minimo in enumerate(salario_min) if salario >= minimo), -1)
+contadores = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+vendas_brutas = [2500, 3000, 3500, 4000, 4500, 5000, 5500, 6000, 6500]
+for venda_bruta in vendas_brutas:
+    salario = 200 + (0.09 * venda_bruta)
+    posicao = calcular_posicao(salario)
+    if posicao != -1:
+        contadores[posicao] += 1
+for i in range(len(contadores)):
+    print(f"Salário entre {salario_min[i]} e {salario_max[i]}: {contadores[i]} vendedores")

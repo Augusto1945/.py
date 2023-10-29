@@ -6,9 +6,7 @@ tabela = {
     104: 1.30,
     105: 1.00
 }
-
 total_pedido = 0
-
 while True:
     codigo = int(input("Digite o código do item (ou 0 para encerrar o pedido): "))
     if codigo == 0:

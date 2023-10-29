@@ -1,0 +1,16 @@
+vetor1 = []
+vetor2 = []
+print("Digite os elementos do primeiro vetor:")
+for i in range(10):
+    elemento = int(input("Elemento {}:".format(i + 1)))
+    vetor1.append(elemento)
+print("Digite os elementos do segundo vetor:")
+for i in range(10):
+    elemento = int(input("Elemento {}:".format(i + 1)))
+    vetor2.append(elemento)
+vetor3 = []
+for i in range(10):
+    vetor3.append(vetor1[i])
+    vetor3.append(vetor2[i])
+print("Terceiro vetor intercalado:")
+print(vetor3)

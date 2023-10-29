@@ -1,1 +1,51 @@
-gabarito = input(01- A 02 - B 03 - C 04 - D 05 - E 06 - E 07 - D 08 - C 09 - B 10 - A)
+def main():
+    gabarito = definir_gabarito()
+    alunos = []
+    
+    while True:
+        respostas_aluno = obter_respostas_aluno(gabarito)
+        alunos.append(respostas_aluno)
+        
+        continuar = input("Outro aluno vai utilizar o sistema? (s/n): ")
+        if continuar.lower() != 's':
+            break
+
+    mostrar_resultados(alunos, gabarito)
+
+def definir_gabarito():
+    print("Digite o gabarito da prova (A, B, C, D, ou E) para cada questão:")
+    gabarito = {}
+    for i in range(1, 11):
+        resposta = input(f"Questão {i}: ").strip().upper()
+        gabarito[i] = resposta
+    return gabarito
+
+def obter_respostas_aluno(gabarito):
+    respostas_aluno = {}
+    print("Digite as respostas do aluno (A, B, C, D, ou E) para cada questão:")
+    for i in range(1, 11):
+        resposta = input(f"Questão {i}: ").strip().upper()
+        respostas_aluno[i] = resposta
+    return respostas_aluno
+
+def mostrar_resultados(alunos, gabarito):
+    maior_acerto = 0
+    menor_acerto = 10
+    total_alunos = len(alunos)
+    soma_notas = 0
+
+    for respostas_aluno in alunos:
+        acertos = sum(1 for i in range(1, 11) if respostas_aluno[i] == gabarito[i])
+        maior_acerto = max(maior_acerto, acertos)
+        menor_acerto = min(menor_acerto, acertos)
+        soma_notas += acertos
+
+    media_notas = soma_notas / total_alunos
+
+    print(f"\nMaior acerto: {maior_acerto}")
+    print(f"Menor acerto: {menor_acerto}")
+    print(f"Total de alunos que utilizaram o sistema: {total_alunos}")
+    print(f"Média das notas da turma: {media_notas:.2f}")
+
+if __name__ == "__main__":
+    main()

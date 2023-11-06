@@ -1,0 +1,4 @@
+for x in range(0,3):
+ a = input("digite seu nome:")
+ b = input("digite seu nome:")
+ print(a,"está em dupla com",b)

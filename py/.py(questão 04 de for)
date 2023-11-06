@@ -1,0 +1,6 @@
+a = int(input("digite um valor:"))
+for x in range(1,11):
+ while x<=10:
+  x = a*x
+  x+=0
+  print(a,"tabuada é:",x)
